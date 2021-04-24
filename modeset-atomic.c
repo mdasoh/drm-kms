@@ -142,7 +142,7 @@ static int modeset_open(int *out, const char *node)
 	 */
 	ret = drmSetClientCap(fd, DRM_CLIENT_CAP_ATOMIC, 1);
 	if (ret) {
-		fprintf(stderr, "failed to set atomic cap, %d", ret);
+		fprintf(stderr, "failed to set atomic cap, %d\n", ret);
 		return ret;
 	}
 
