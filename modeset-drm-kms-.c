@@ -1639,19 +1639,3 @@ int vt_init()
 
    return EXIT_SUCCESS;
 }
-
-/*int main( int argc, char* argv[] )
-{
-   int err = 0;
-   err = vt_init();
-   assert( err == EXIT_SUCCESS );
-
-   for(; !done;)
-   {
-      sched_yield();
-   }
-   err = vt_fini();
-   assert( err == EXIT_SUCCESS );
-
-   return EXIT_SUCCESS;
-}*/

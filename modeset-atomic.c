@@ -1338,7 +1338,7 @@ int vt_init()
    signal( SIGUSR2, usr2 );
 
    console = err = open( "/dev/console", O_RDWR );
-   assert( err != 0 );
+   assert( err >= 0 );
    err = ioctl( console, VT_GETMODE, &vtm );
    assert( err >= 0 );
    vti = vtm;
